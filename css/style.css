@@ -1,0 +1,187 @@
+/* Start Varables */
+:root {
+  --text-color: hsl(224, 23%, 55%);
+  --hover-color: hsl(245, 83%, 68%); /* Check It Out*/
+  --button-color: hsl(245, 75%, 52%);
+  --heading-color: hsl(223, 47%, 23%);
+  --price-bg-color: hsl(225, 100%, 98%);
+  --background-color: hsl(225, 100%, 94%);
+  --main-duration: 300ms;
+}
+/* End Varables */
+/* Start Globel Rule */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+/* End Globel Rule */
+/* Start The Body */
+body {
+  background: var(--background-color)
+    url(../images/pattern-background-desktop.svg) no-repeat;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+  }
+}
+/* End The Body */
+/* Start The Main */
+main {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 450px;
+  height: 700px;
+  box-shadow: 0 5px 50px -25px hsla(0, 0%, 0%, 0.350);
+}
+@media (max-width: 767px) {
+  main {
+    width: 330px;
+    height: 570px;
+    margin: 40px 15px;
+  }
+}
+/* Start The Header */
+main header img {
+  max-width: 100%;
+  display: block;
+}
+/* End The Header */
+/* Start The Content Section */
+main .content {
+  background: hsl(0, 0%, 100%);
+  height: 100%;
+  padding: 50px;
+}
+@media (max-width: 767px) {
+  main .content {
+    padding: 30px 25px;
+  }
+}
+/* Start The Text Section */
+main .content .text {
+  text-align: center;
+  margin-bottom: 25px;
+}
+main .content .text h2 {
+  color: var(--heading-color);
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  main .content .text h2 {
+    font-size: 22px;
+    margin-bottom: 17px;
+  }
+}
+main .content .text p {
+  color: var(--text-color);
+  line-height: 1.6;
+}
+@media (max-width: 767px) {
+  main .content .text p {
+    line-height: 1.7;
+    font-size: 15px;
+    width: 250px;
+    margin: auto;
+  }
+}
+/* End The Text Section */
+/* Start The Price Section */
+main .content .price {
+  background: var(--unknowen-bg-color);
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 20px;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  main .content .price {
+    padding: 15px;
+    margin-bottom: 25px;
+  }
+}
+main .content .price ul li:first-child {
+  margin-bottom: 8px;
+  color: var(--heading-color);
+  font-weight: 900;
+}
+main .content .price ul li:last-child {
+  color: var(--text-color);
+}
+@media (max-width: 767px) {
+  main .content .price ul li {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  main .content .price ul li:first-child {
+    margin-bottom: 5px;
+  }
+}
+main .content .price a {
+  color: var(--button-color);
+  font-size: 14px;
+  font-weight: 700;
+  transition: var(--main-duration);
+}
+main .content .price a:hover {
+  color: var(--hover-color);
+  text-decoration: none;
+}
+/* Start The Price Section */
+/* Start The Action Section */
+main .content .action button {
+  color: white;
+  background: var(--button-color);
+  box-shadow: 0 5px 25px -5px hsla(0, 0%, 0%, 0.5);
+  border: none;
+  border-radius: 10px;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: background-color var(--main-duration);
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+  display: block;
+}
+@media (max-width: 767px) {
+  main .content .action button {
+    margin-bottom: 25px;
+  }
+}
+main .content .action button:hover {
+  background: var(--hover-color);
+}
+main .content .action a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: 700;
+  transition: color var(--main-duration);
+}
+main .content .action a:hover {
+  color: var(--heading-color);
+}
+/* End The Action Section */
+/* End The Content Section */
+/* End The Main */
