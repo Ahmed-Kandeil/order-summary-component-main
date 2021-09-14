@@ -44,7 +44,7 @@ main {
   overflow: hidden;
   width: 450px;
   height: 700px;
-  box-shadow: 0 5px 50px -25px hsla(0, 0%, 0%, 0.350);
+  box-shadow: 0 5px 50px -25px hsla(0, 0%, 0%, 0.35);
 }
 @media (max-width: 767px) {
   main {
@@ -75,14 +75,14 @@ main .content .text {
   text-align: center;
   margin-bottom: 25px;
 }
-main .content .text h2 {
+main .content .text h1 {
   color: var(--heading-color);
   font-size: 28px;
   font-weight: 900;
   margin-bottom: 15px;
 }
 @media (max-width: 767px) {
-  main .content .text h2 {
+  main .content .text h1 {
     font-size: 22px;
     margin-bottom: 17px;
   }
@@ -146,8 +146,8 @@ main .content .price a:hover {
   text-decoration: none;
 }
 /* Start The Price Section */
-/* Start The Action Section */
-main .content .action button {
+/* Start The Footer */
+main .content footer button {
   color: white;
   background: var(--button-color);
   box-shadow: 0 5px 25px -5px hsla(0, 0%, 0%, 0.5);
@@ -163,14 +163,14 @@ main .content .action button {
   display: block;
 }
 @media (max-width: 767px) {
-  main .content .action button {
+  main .content footer button {
     margin-bottom: 25px;
   }
 }
-main .content .action button:hover {
+main .content footer button:hover {
   background: var(--hover-color);
 }
-main .content .action a {
+main .content footer a {
   display: block;
   text-decoration: none;
   text-align: center;
@@ -179,9 +179,9 @@ main .content .action a {
   font-weight: 700;
   transition: color var(--main-duration);
 }
-main .content .action a:hover {
+main .content footer a:hover {
   color: var(--heading-color);
 }
-/* End The Action Section */
+/* End The Footer */
 /* End The Content Section */
 /* End The Main */
